@@ -5,10 +5,10 @@ const SecondEU = require("../models/SecondEU");
 module.exports = {
   getIndex: async (req, res) => {
     try {
-      // retrieve data from the mongoose model and limit it to the last 100
-      const deriv = await Deriv.find().sort({ _id: -1 }).limit(100);
-      const firstEU = await FirstEU.find().sort({ _id: -1 }).limit(100);
-      const secondEU = await SecondEU.find().sort({ _id: -1 }).limit(100);
+      // retrieve data from the mongoose model and limit it to the first 100
+      const deriv = await Deriv.find().sort({ _id: 1 }).limit(100);
+      const firstEU = await FirstEU.find().sort({ _id: 1 }).limit(100);
+      const secondEU = await SecondEU.find().sort({ _id: 1 }).limit(100);
 
       const data = {
         deriv: deriv,
