@@ -13,7 +13,7 @@ This project is a Node.js and React application that connects to the Metatrader5
 1. Clone this repository
 2. Install dependencies: `npm install`
 3. Start the client server: `npm start`
-5. Start the api server: "npm start"
+5. Start the api server: `npm start`
 4. Open http://localhost:3000/ in your browser
 
 ## Usage
