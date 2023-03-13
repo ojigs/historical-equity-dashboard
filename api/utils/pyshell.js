@@ -1,11 +1,11 @@
 const { PythonShell } = require("python-shell");
-const Deriv = require("./models/Deriv");
-const FirstEU = require("./models/FirstEU");
-const SecondEU = require("./models/SecondEU");
+const Deriv = require("../models/Deriv");
+const FirstEU = require("../models/FirstEU");
+const SecondEU = require("../models/SecondEU");
 
 async function pyshell() {
   try {
-    const path = "./pyscript/main.py";
+    const path = "../pyscript/main.py";
 
     // create different instances of pythonshell to connect to our script
     let pyshell1 = new PythonShell(path);

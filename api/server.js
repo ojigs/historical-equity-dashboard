@@ -8,7 +8,7 @@ const dotenv = require("dotenv");
 dotenv.config({ path: "./config/.env" });
 const PORT = process.env.PORT;
 const connectDB = require("./config/database");
-const pyshell = require("./pyshell");
+const pyshell = require("./utils/pyshell");
 const mainRoutes = require("./routes/main");
 
 connectDB();
