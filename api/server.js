@@ -36,6 +36,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/", mainRoutes);
 
-app.listen(PORT, () => {
+app.listen(PORT || 4000, () => {
   console.log(`Server connected on port ${PORT}`);
 });
