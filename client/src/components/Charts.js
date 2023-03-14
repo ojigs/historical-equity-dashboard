@@ -20,7 +20,7 @@ const Chart = (props) => {
 
   return (
     <>
-      <h3 className="mt-5 mb-5">This is a line chart for {props.title}</h3>
+      <h3 className="mt-5 mb-3">This is a line chart for {props.title}</h3>
       <ResponsiveContainer width="100%" aspect={3}>
         <LineChart
           data={data}

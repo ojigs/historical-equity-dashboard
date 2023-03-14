@@ -10,7 +10,7 @@ const DerivSchema = new mongoose.Schema({
     required: true,
   },
   time: {
-    type: Number,
+    type: String,
     required: true,
   },
 });

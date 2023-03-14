@@ -30,15 +30,14 @@ while True:
                 account_info = mt5.account_info()
                 balance = account_info.balance
                 equity = account_info.equity
-                time = datetime.now().timestamp()
+                # time = datetime.now().timestamp()
 
                 # IMPORTANT!: Market watch time to be modified to use this code. It will output time in the format, 03 March, 23:59
-                # symbol = mt5.symbol_info("GBPUSD")._asdict()
-                # timestamp = symbol["time"]
-                # print(datetime.now().timestamp())
-                # date = datetime.fromtimestamp(timestamp)
-                # hour_ago = date - timedelta(hours=1)
-                # time = hour_ago.strftime("%d %B, %H:%M")
+                symbol = mt5.symbol_info("GBPUSD")._asdict()
+                timestamp = symbol["time"]
+                date = datetime.fromtimestamp(timestamp)
+                hour_ago = date - timedelta(hours=1)
+                time = hour_ago.strftime("%d %B, %H:%M")
 
                 print(json.dumps(
                     {"balance": balance, "equity": equity, "time": time}))
