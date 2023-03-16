@@ -1,5 +1,7 @@
 # Historical Equity Dashboard App
 
+![Wireframe sketch](https://github.com/ojigs/historical-equity-dashboard/blob/main/historical-equity-dashboard.jpg?raw=true)
+
 This project is a Node.js and React application that connects to the Metatrader5 platform and extracts equity, balance, and market watch time data. The data is collected every minute and saved to MongoDB using Mongoose. The data is then retrieved from MongoDB and transmitted to React in real time. This allows us to build a live dashboard in React and present it in a chart format.
 
 ## Prerequisites
