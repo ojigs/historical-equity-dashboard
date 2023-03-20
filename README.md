@@ -7,6 +7,7 @@ This project is a Node.js and React application that connects to the Metatrader5
 ## Prerequisites
 
 - Node.js
+- Python
 - MongoDB
 - React
 
